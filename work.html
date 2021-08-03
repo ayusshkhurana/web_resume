@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.7.0/swiper-bundle.min.css"
+		/>
+		<link rel="stylesheet" href="./css/style.css" />
+		<link rel="stylesheet" href="./css/jquery.multiscroll.css" />
+		<link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon" />
+		<title>Ayussh Khurana | Work</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<header class="header">
+				<div class="logo">
+					<a href="index.php" class="logo">ayusshkhurana.</a>
+				</div>
+				<div class="toggleBtn">
+					<span></span>
+					<span></span>
+				</div>
+			</header>
+
+			<!-- Slider main container -->
+			<div class="swiper-container">
+				<!-- Additional required wrapper -->
+				<div class="swiper-wrapper">
+					<!-- Slides -->
+					<div class="swiper-slide">
+						<video
+							src="./images/tech_smiles.mp4"
+							loop
+							muted
+							autoplay
+							controls
+						></video>
+						<div class="caption">
+							<h1 class="title">Tech Smiles Tech Smiles Tech Smiles</h1>
+							<h1 class="clone">Tech Smiles Tech Smiles Tech Smiles</h1>
+						</div>
+						<div class="icon-scroll"></div>
+					</div>
+					<div class="swiper-slide">
+						<video
+							src="./images/lifeuncut.mp4"
+							loop
+							muted
+							autoplay
+							controls
+						></video>
+						<div class="caption">
+							<h1 class="title"
+								>Life Uncut w/ Ayussh Life Uncut w/ Ayussh Life Uncut w/
+								Ayussh</h1
+							>
+							<h1 class="clone"
+								>Life Uncut w/ Ayussh Life Uncut w/ Ayussh Life Uncut w/
+								Ayussh</h1
+							>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<video
+							src="./images/skilltyro.mp4"
+							loop
+							muted
+							autoplay
+							controls
+						></video>
+						<div class="caption">
+							<h1 class="title">SkillTyro SkillTyro SkillTyro</h1>
+							<h1 class="clone">SkillTyro SkillTyro SkillTyro</h1>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<video
+							src="./images/smilingscience.mp4"
+							loop
+							muted
+							autoplay
+							controls
+						></video>
+						<div class="caption">
+							<h1 class="title"
+								>The Smiling Science The Smiling Science The Smiling Science</h1
+							>
+							<h1 class="clone"
+								>The Smiling Science The Smiling Science The Smiling Science</h1
+							>
+						</div>
+					</div>
+
+					<!-- <div class="swiper-slide">
+						<video
+							src="./images/Restaurant Promo.mp4"
+							loop
+							muted
+							autoplay
+							controls
+						></video>
+						<div class="caption">
+							<h1 class="title"
+								>Restaurant Promo Restaurant Promo Restaurant Promo</h1
+							>
+							<h1 class="clone"
+								>Restaurant Promo Restaurant Promo Restaurant Promo</h1
+							>
+						</div>
+					</div> -->
+				</div>
+			</div>
+		</div>
+		<div class="overlay-menu">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="index.html#about">About</a></li>
+				<li><a href="index.html#skills">Skills</a></li>
+				<li><a href="work.html">Work</a></li>
+				<li><a href="index.html#contact">Contact</a></li>
+			</ul>
+		</div>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.7.0/swiper-bundle.min.js"></script>
+		<script>
+			const swiper = new Swiper(".swiper-container", {
+				direction: "vertical",
+				speed: 1000,
+				mousewheel: {},
+			});
+
+			swiper
+				.on("slideChangeTransitionStart", function () {
+					$(".swiper-slide").css("transform", "scale(0.8)");
+				})
+				.on("slideChangeTransitionEnd", function () {
+					$(".swiper-slide").css("transform", "scale(1)");
+				});
+
+			$(".toggleBtn").on("click", function () {
+				$(".toggleBtn").toggleClass("close");
+				$(".overlay-menu").toggleClass("show");
+			});
+		</script>
+	</body>
+</html>

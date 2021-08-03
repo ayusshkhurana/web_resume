@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon" />
+		<link rel="stylesheet" href="./css/style.css" />
+		<link rel="stylesheet" href="./css/jquery.multiscroll.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+		/>
+		<title>Ayussh Khurana</title>
+
+		<style>
+			.toggleBtn span {
+				background: var(--dark-color);
+			}
+
+			@media screen and (max-width: 768px) {
+				.toggleBtn span {
+					background: var(--light-color);
+				}
+			}
+
+			.close span {
+				background: var(--light-color);
+			}
+		</style>
+	</head>
+
+	<body>
+		<header class="header nav">
+			<div class="logo">
+				<a href="index.html" class="logo">ayusshkhurana.</a>
+			</div>
+			<div class="toggleBtn">
+				<span></span>
+				<span></span>
+			</div>
+		</header>
+		<main>
+			<div id="multiscroll">
+				<div class="ms-left">
+					<div class="ms-section home">
+						<div class="home-title">
+							<h1 class="animate">
+								<span class="heading" id="create">Hi, I´m a</span>
+							</h1>
+							<h1 class="animate">
+								<span id="create">Content Creator,</span>
+							</h1>
+							<h1 class="animate">
+								<span id="create">Content Writer,</span>
+							</h1>
+
+							<h1 class="animate">
+								<span id="create">&amp; Strategist</span>
+							</h1>
+							<a href="#contact"
+								><button class="btn">Let's get in touch</button></a
+							>
+						</div>
+					</div>
+					<div class="ms-section about">
+						<h1>About</h1>
+						<div class="flex">
+							<p
+								>I'm someone who can't imagine his life without goals and my
+								goal is to grow myself out. My name is Ayussh Khurana based out
+								of New Delhi, India. I am passionate, curious about things, full
+								of so many interests and obviously a content writer, creator &
+								strategist.
+								<br />
+								<br />
+								<q>It's not about ideas. It's about making ideas happen</q>
+							</p>
+						</div>
+					</div>
+					<div class="ms-section skills">
+						<h1>Skills</h1>
+						<div class="skill-container">
+							<ul class="skill-list">
+								<li>
+									<img src="./images/1.svg" />
+									<br />
+									<br />
+									<h3>Content Creation</h3>
+								</li>
+								<li>
+									<img src="./images/2.svg" />
+									<br />
+									<br />
+									<h3>Content Writing</h3>
+								</li>
+								<li>
+									<img src="./images/3.svg" />
+									<br />
+									<br />
+									<h3>Content Strateging</h3>
+								</li>
+								<li>
+									<img src="./images/4.svg" />
+									<br />
+									<br />
+									<h3>Social Media Management</h3>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="ms-section work">
+						<h1>Work</h1>
+						<div class="flex">
+							<p
+								>I have been working as an intern for social media management
+								and content writer
+								<br />
+								Have a look at my work!
+							</p>
+						</div>
+						<a href="work.html"
+							><button class="btn2">Show me your work!</button></a
+						>
+					</div>
+
+					<div class="ms-section contact">
+						<h1>Let's Connect</h1>
+						<p
+							><a class="email" href="mailto:ayusshkhurana7@gmail.com"
+								>ayusshkhurana7@gmail.com</a
+							>
+						</p>
+						<br />
+						<ul class="social-icons">
+							<li>
+								<a
+									target="_blank"
+									href="https://www.instagram.com/tech__smiles/"
+								>
+									<i class="fab fa-instagram"></i>
+								</a>
+							</li>
+							<li>
+								<a
+									target="_blank"
+									href="https://www.linkedin.com/in/ayussh-khurana-a0ab76207/"
+								>
+									<i class="fab fa-linkedin"></i>
+								</a>
+							</li>
+							<li>
+								<a target="_blank" href="https://twitter.com/mrtonyisme"
+									><i class="fab fa-twitter"></i
+								></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="ms-right">
+					<div class="ms-section home-partner"> </div>
+					<div class="ms-section about-partner"></div>
+					<div class="ms-section skills-partner">
+						<video
+							src="./images/skills.mp4"
+							muted
+							autoplay
+							loop
+							width="50%"
+						></video>
+					</div>
+					<div class="ms-section work-partner">
+						<video
+							src="./images/work.mp4"
+							muted
+							autoplay
+							loop
+							width="50%"
+						></video>
+					</div>
+					<div class="ms-section contact-partner"></div>
+				</div>
+			</div>
+		</main>
+
+		<div class="overlay-menu">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="index.html#about">About</a></li>
+				<li><a href="index.html#skills">Skills</a></li>
+				<li><a href="work.html">Work</a></li>
+				<li><a href="index.html#contact">Contact</a></li>
+			</ul>
+		</div>
+
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+		<!-- GSAP -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/multiscroll.js/0.2.3/jquery.multiscroll.min.js"></script>
+		<script>
+			$(document).ready(function () {
+				$("#multiscroll").multiscroll({
+					navigation: true,
+					navigationPosition: "right",
+					navigationColor: "#fff",
+					anchors: ["home", "about", "skills", "work", "blog", "contact"],
+				});
+			});
+
+			gsap.to("#create", {
+				y: "0%",
+				duration: 0.7,
+				stagger: 0.2,
+			});
+			gsap.from(".nav", {
+				opacity: 0,
+				duration: 1,
+				delay: 1,
+				y: -30,
+			});
+			gsap.from(".btn", {
+				opacity: 0,
+				duration: 1,
+				delay: 1,
+				y: -30,
+			});
+			gsap.from(".btn2", {
+				opacity: 0,
+				duration: 1,
+				delay: 1,
+				y: -30,
+			});
+
+			$(".toggleBtn").on("click", function () {
+				$(".toggleBtn").toggleClass("close");
+				$(".overlay-menu").toggleClass("show");
+			});
+		</script>
+	</body>
+</html>
